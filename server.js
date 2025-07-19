@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // CORS hanya benarkan domain resume anda
-const allowedOrigins = [process.env.ALLOWED_ORIGIN || 'http://localhost:3000'];
+const allowedOrigins = [process.env.ALLOWED_ORIGIN || 'https://website-resume-muizz-production.up.railway.app/api/contact'];
 app.use(cors({
   origin: function(origin, callback) {
     // Allow requests with no origin (like mobile apps, curl, etc.)
