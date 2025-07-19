@@ -6,7 +6,7 @@ const nodemailer = require('nodemailer');
 const helmet = require('helmet');
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 8080;
 
 // CORS hanya benarkan domain resume anda
 const allowedOrigins = [process.env.ALLOWED_ORIGIN || 'https://website-resume-muizz-production.up.railway.app/api/contact'];
